@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --radius: 14px;
+    --main-bg: #f4f1ec;
+    --accent: #e8956d;
+    --sidebar-bg: #1a1a2e;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a4a6a;
+    --border: rgba(26, 26, 46, 0.1);
+    --font-display: 'DM Serif Display', Georgia, serif;
+    --font-body: 'DM Sans', sans-serif;
+}
+
+body{
+    font-family: var(--font-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.page{
+    max-width: 1000px;
+    max-height: 90vh;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    width: 100%;
+    border-radius: var(--radius); /*But border radius is showing */
+    background-color: #12f2df; /*Although there is a overflow property, this bg clr is not showing */
+    overflow: hidden; /*I didn't understand this overflow property */
+}
+
+.main{
+    background-color: var(--main-bg);
+    padding: 44px 44px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section-title{
+    font-family: var(--font-display);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border);
+    color: var(--text-dark);
+}
+
+.summary-text{
+    font-size: 13px;
+    color: var(--text-mid);
+    font-size: 13.5px;
+    line-height: 1.75;
+}
+
+.sidebar{
+    background-color: var(--sidebar-bg);
+    padding: 44px 28px;
+}
+
+.avatar{
+    background-color: var(--accent);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.name{
+    color: #f4f1ec;
+    font-family: var(--font-display);
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
