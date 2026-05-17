@@ -1,2 +1,2 @@
 # My-digital-resume
-This is my digital copy of resume
+This is the digital copy of my resume
