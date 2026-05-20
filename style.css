@@ -13,6 +13,8 @@
     --text-dark: #1a1a2e;
     --text-light: #888;
     --text-mid: #4a4a6a;
+    --tag-bg: rgba(255, 255, 255, 0.08);
+    --tag-text: #c8c5be;
     --border: rgba(26, 26, 46, 0.1);
     --font-display: 'DM Serif Display', Georgia, serif;
     --font-body: 'DM Sans', sans-serif;
@@ -176,4 +178,74 @@ body{
     flex-shrink: 0;
     align-self: flex-start; /*I didn't understand align-self*/
     margin-top: 2px;
+}
+
+.contact-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon{
+    color: var(--accent);
+}
+
+.contact-list li{
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+    color: rgb(144, 144, 144);
+}
+
+.contact-list a{
+    color: var(--sidebar-text);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-list a:hover{
+    color: var(--accent);
+}
+
+.sidebar-heading{
+    font-family: var(--font-body);
+    font-size: 18px;
+    color: var(--accent);
+    padding-bottom: 15px;
+}
+
+.skills-block{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.skill-category{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.skill-label{
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(157, 157, 157);
+}
+
+.skill-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag{
+    font-size: 10px;
+    color: var(--tag-text);
+    background-color: var(--tag-bg);
+    padding: 3px 9px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.08);
 }
